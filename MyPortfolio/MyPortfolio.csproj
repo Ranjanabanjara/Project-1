@@ -67,6 +67,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\plugins.css" />
+    <Content Include="Content\shBrushJScript.js" />
+    <Content Include="Content\shCore.css" />
+    <Content Include="Content\ShThemeDefault.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Images\b4.jpg" />
+    <Content Include="Images\b5.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg1.jpg" />
+    <Content Include="Images\blog1.jpg" />
+    <Content Include="Images\blog2.jpg" />
+    <Content Include="Images\blog3.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\hero.jpg" />
+    <Content Include="Images\portfolio\1.jpg" />
+    <Content Include="Images\portfolio\2.jpg" />
+    <Content Include="Images\portfolio\3.jpg" />
+    <Content Include="Images\portfolio\4.jpg" />
+    <Content Include="Images\portfolio\5.jpg" />
+    <Content Include="Images\portfolio\6.jpg" />
+    <Content Include="index.html" />
+    <Content Include="Script\animated.headline.js" />
+    <Content Include="Script\bootstrap.min.js" />
+    <Content Include="Script\isotope.pkgd.min.js" />
+    <Content Include="Script\jquery-3.0.0.min.js" />
+    <Content Include="Script\jquery-migrate-3.0.0.min.js" />
+    <Content Include="Script\jquery.counterup.min.js" />
+    <Content Include="Script\jquery.magnific-popup.min.js" />
+    <Content Include="Script\jquery.stellar.min.js" />
+    <Content Include="Script\jquery.waypoints.min.js" />
+    <Content Include="Script\owl.carousel.min.js" />
+    <Content Include="Script\popper.min.js" />
+    <Content Include="Script\shCore.js" />
+    <Content Include="Script\scripts.js" />
+    <Content Include="Script\scrollIt.min.js" />
+    <Content Include="Script\validator.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\RanjanaPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,6 +118,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
