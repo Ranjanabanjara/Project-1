@@ -70,22 +70,17 @@
     <Content Include="Content\shCore.css" />
     <Content Include="Content\ShThemeDefault.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Images\b4.jpg" />
-    <Content Include="Images\b5.jpg" />
-    <Content Include="Images\bg.jpg" />
     <Content Include="Images\bg1.jpg" />
-    <Content Include="Images\blog1.jpg" />
-    <Content Include="Images\blog2.jpg" />
-    <Content Include="Images\blog3.jpg" />
-    <Content Include="Images\email.png" />
+    <Content Include="Images\bg3.jpg" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\hero.jpg" />
-    <Content Include="Images\portfolio\1.jpg" />
-    <Content Include="Images\portfolio\2.jpg" />
-    <Content Include="Images\portfolio\3.jpg" />
-    <Content Include="Images\portfolio\4.jpg" />
-    <Content Include="Images\portfolio\5.jpg" />
-    <Content Include="Images\portfolio\6.jpg" />
+    <Content Include="Images\p1.jpg" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\p3.jpg" />
+    <Content Include="Images\p4.jpg" />
+    <Content Include="Images\p5.jpg" />
+    <Content Include="Images\p6.jpg" />
+    <Content Include="Images\resume.jpg" />
     <Content Include="index.html" />
     <Content Include="nuget.exe" />
     <Content Include="plugins\css\animate.min.css" />
@@ -120,6 +115,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="myResume.pdf" />
+    <Content Include="Fonts\fa-brands-400.woff2" />
+    <Content Include="Fonts\fa-brands-400.woff" />
+    <Content Include="Fonts\fa-solid-900.woff2" />
+    <Content Include="Fonts\fa-solid-900.woff" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\RanjanaPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

@@ -1,14 +1,21 @@
 ﻿// JavaScript source code
 $(document).ready(function () {
 
+    //Sum Challenge
+    //Toggle Show/Hide Button
+    $("#sumCode").hide();
+    $("#code").click(function () {
+        $("#sumCode").toggle();
 
+        if ($(this).text() == "code") {
+            $(this).text("Hide Code");
 
-
-
-
-
-
-    //Sum of Numbers Exercise
+        }
+        else {
+            $(this).text("Show code")
+        };
+    });
+        //Sum of Numbers Exercise
 
 
     $("#main-button").click(function () {

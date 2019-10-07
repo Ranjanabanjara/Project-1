@@ -15,50 +15,48 @@
     <title>My Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="shortcut icon" href="Images/favicon.ico"/>
+ 
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,600,700" rel="stylesheet" />
 
     <!-- Plugins -->
-    <!-- Plugins -->
+    <link rel="stylesheet" href="plugins/imports.css" />
 
-    <link rel="stylesheet" href="Content/css/plugins.css" />
+    <!--Bootstraps-->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-   
+
     <!--Core Style Css-->
-    <link rel="stylesheet" href="Content/css/style.css" />
+    <link rel="stylesheet" href="Content/style.css" />
+
+    <!--SyntaxHilighter-->
+    <link rel="stylesheet" href="Content/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="Content/ShThemeDefault.css" type="text/css" />
 
 </head>
 
 <body class="dark-theme">
 
-    <!-- =====================================
-    ==== Start Loading -->
+    <!--  Start Loading -->
     <div class="loading">
         <div class="text-center middle">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
     </div>
-    <!-- End Loading ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Navbar -->
+    <!-- End Loading
+
+
+     <-- Start Navbar -->
+
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-
-            <!-- Logo -->
-            <a class="logo" href="#">Portfolio</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"><i class="fas fa-bars"></i></span>
-            </button>
-
             <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -74,12 +72,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="3">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="5">Blog</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
                     </li>
@@ -87,11 +85,9 @@
             </div>
         </div>
     </nav>
-    <!-- End Navbar ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Header -->
-    <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="images/bg1.jpg" data-stellar-background-ratio="0.5">
+    <!-- End Navbar -->
+    <!-- Start Header -->
+    <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="Images/bg1.jpg" data-stellar-background-ratio="5">
         <div class="container">
             <div class="row">
                 <div class="vertical-center full-width text-center caption">
@@ -114,25 +110,21 @@
             </a>
         </div>
     </header>
-    <!-- End Header ====
-    ======================================= -->
-    clean
-
-    <!-- =====================================
-    ==== Start Hero -->
+    <!-- End Header  -->
+    <!--  Start Hero -->
     <section class="hero section-padding" data-scroll-index="1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-sm-3">
                     <div class="hero-img mb-md50">
-                        <img src="Images/hero.jpg" alt="3">
+                        <img src="Images/hero.jpg" class="circle  img-fluid" alt="3">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="content">
                         <h4 class="title title-left">I Am Web Designer</h4>
                         <p>I am <span>Ranjana Banjara</span></p>
-                        
+
 
                         <div class="social-icon">
                             <a href="#0">
@@ -156,18 +148,16 @@
                             <a href="#0" front="Hire Me" back="&#xf1d8;" data-scroll-nav="6"></a>
                         </span>
                         <span class="buton buton-bord text-center">
-                            <a href="CV.pdf" front="Download C.V" back="&#xf019;" download="CV.pdf"></a>
+                            <a href="myResume.pdf" front="Download C.V" back="&#xf019;" download="myResume.pdf"></a>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Hero ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Resume -->
-    <section class="resume bg-img" data-overlay-dark="8" data-background="img/b4.jpg" data-scroll-index="1">
+    <!-- End Hero-->
+    <!-- Start Resume -->
+    <section class="resume bg-img" data-overlay-dark="5" data-background="Images/resume.jpg" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
@@ -210,7 +200,7 @@
                         <h5 class="title title-left">My Skills</h5>
 
                         <div class="skill">
-                            <h6>Web Design <span>90%</span></h6>
+                            <h6>Web Design<span>90%</span></h6>
                             <div class="skills-progress"><span data-value='90%'></span></div>
                         </div>
                         <div class="skill">
@@ -230,10 +220,8 @@
             </div>
         </div>
     </section>
-    <!-- End Resume ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Services -->
+    <!-- End Resume -->
+    <!--Start Services -->
     <section class="services section-padding" data-scroll-index="2">
         <div class="container">
             <div class="row">
@@ -246,21 +234,21 @@
                     <div class="item mb-md50">
                         <span class="icon icon-laptop"></span>
                         <h6>Web Design</h6>
-                        <p>some paragraph</p>
+                        <p>Learning Phase</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 active bolt">
                     <div class="item mb-md50">
-                        <span class="icon icon-layers"></span>
+                        <span class="icon icon-megaphone"></span>
                         <h6>Development Tools</h6>
-                        <p>some paragraph</p>
+                        <p>currently .Net Framework</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="item mb-md50">
-                        <span class="icon icon-megaphone"></span>
+                        <span class="icon icon-layers"></span>
                         <h6>Personal Interests</h6>
-                        <p>some paragraph</p>
+                        <p>Music, painting, sports (walking, excercise, running, tennis)</p>
                     </div>
                 </div>
                 <div class="bord full-width"></div>
@@ -268,45 +256,43 @@
                     <div class="item mb-md50">
                         <span class="icon icon-shield"></span>
                         <h6>Clean Code</h6>
-                        <p>Some paragraph</p>
+                        <p>Codes are easy to understand and easy to change</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 active">
                     <div class="item mb-sm50">
                         <span class="icon icon-mobile"></span>
                         <h6>Fully Responsive</h6>
-                        <p>some paragraph</p>
+                        <p>web pages that detect the visitor's screen size and orientation and change the layout accordingly.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="item">
                         <span class="icon icon-gears"></span>
                         <h6>Customer Relation</h6>
-                        <p>some paragraph</p>
+                        <p> it is absolutely essential that you develop effective customer relations.</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- End Services ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Numbers -->
-    <div class="numbers bg-img" data-stellar-background-ratio="0.5" data-overlay-dark="8" data-background="img/b3.jpg">
+    <!-- End Services -->
+    <!--  Start Numbers -->
+    <div class="numbers bg-img" data-stellar-background-ratio="0.5" data-overlay-dark="8" data-background="Images/resume.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="item mb-md50">
                         <span class="icon icon-happy"></span>
-                        <h2 class="count">Not yet</h2>
+                        <h2 class="count">all</h2>
                         <p>Happy Customers</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="item mb-md50">
                         <span class="icon icon-layers"></span>
-                        <h2 class="count">Not yet</h2>
+                        <h2 class="count">5</h2>
                         <p>Projects Completed</p>
                     </div>
                 </div>
@@ -327,12 +313,8 @@
             </div>
         </div>
     </div>
-    <!-- End Numbers ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start portfolio -->
-    <!-- End portfolio ====
-    ======================================= -->
+    <!-- End Numbers  -->
+    <!-- Start portfolio -->
     <section class="portfolio section-padding" data-scroll-index="3">
         <div class="container">
             <div class="row">
@@ -355,19 +337,20 @@
                 </div>
 
                 <!-- gallery -->
+
                 <div class="gallery full-width">
                     <!-- gallery item -->
                     <div class="col-md-6 col-lg-4 items graphic">
 
                         <div class="item-img">
-                            <img src="Images/portfolio/1.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal">
+                            <img src="Images/p1.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal1">
 
                                 <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
+                                    <h6>Click to see:</h6>
+                                    <h5>Bootstrap row based modal</h5>
                                 </div>
-                                <a href="Images/portfolio/1.jpg" class="link">
+                                <a href="Images/p1.jpg" class="link">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -375,15 +358,15 @@
                     </div>
 
                     <!-- gallery item -->
-                    <div class="col-md-6 col-lg-4 items web">
+                    <div class="col-md-6 col-lg-4 items brand">
                         <div class="item-img">
-                            <img src="Images/portfolio/2.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal1">
+                            <img src="Images/p2.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal2">
                                 <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
+                                    <h6>Click to see:</h6>
+                                    <h5>Bootstrap column based modal</h5>
                                 </div>
-                                <a href="Images/portfolio/2.jpg" class="link">
+                                <a href="Images/p2.jpg" class="link">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -393,13 +376,29 @@
                     <!-- gallery item -->
                     <div class="col-md-6 col-lg-4 items graphic">
                         <div class="item-img">
-                            <img src="Images/portfolio/3.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign">
+                            <img src="Images/p3.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal3">
                                 <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
+                                    <h6>Click me to get:</h6>
+                                    <h5>Sum of Numbers!</h5>
                                 </div>
-                                <a href="Images/portfolio/3.jpg" class="link">
+                                <a href="Images/p3.jpg" class="link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-md-6 col-lg-4 items graphic">
+                        <div class="item-img">
+                            <img src="Images/p4.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal4">
+                                <div class="overlay-info vertical-center full-width">
+                                    <h6>Click me to get:</h6>
+                                    <h5>Palindrome Check!</h5>
+                                </div>
+                                <a href="Images/p5.jpg" class="link">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -409,13 +408,13 @@
                     <!-- gallery item -->
                     <div class="col-md-6 col-lg-4 items web">
                         <div class="item-img">
-                            <img src="Images/portfolio/4.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign">
+                            <img src="Images/p5.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal5">
                                 <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
+                                    <h6>Click me to get:</h6>
+                                    <h5>Factorial of Numbers!</h5>
                                 </div>
-                                <a href="Images/portfolio/4.jpg" class="link">
+                                <a href="Images/p5.jpg" class="link">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -423,31 +422,15 @@
                     </div>
 
                     <!-- gallery item -->
-                    <div class="col-md-6 col-lg-4 items brand">
+                    <div class="col-md-6 col-lg-4 items web">
                         <div class="item-img">
-                            <img src="Images/portfolio/5.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign">
+                            <img src="Images/p6.jpg" alt="image">
+                            <div class="item-img-overlay text-center valign" data-toggle="modal" data-target="#myModal6">
                                 <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
+                                    <h6>Check it!</h6>
+                                    <h5>FIZZ or BUZZ?</h5>
                                 </div>
-                                <a href="Images/portfolio/5.jpg" class="link">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- gallery item -->
-                    <div class="col-md-6 col-lg-4 items brand">
-                        <div class="item-img">
-                            <img src="Images/portfolio/6.jpg" alt="image">
-                            <div class="item-img-overlay text-center valign">
-                                <div class="overlay-info vertical-center full-width">
-                                    <h6>Design . Motion</h6>
-                                    <h5>Crearive Design</h5>
-                                </div>
-                                <a href="Images/portfolio/6.jpg" class="link">
+                                <a href="Images/p6.jpg" class="link">
                                     <i class="fas fa-eye"></i>
                                 </a>
                             </div>
@@ -466,120 +449,9 @@
             </div>
         </div>
     </section>
-
-    <!-- =====================================
-    ==== Start Testimonails -->
-    <section class="Testimonials section-padding bg-img" data-overlay-dark="8" data-background="img/b2.jpg" data-scroll-index="4">
-        <div class="container">
-            <div class="row">
-
-                <!-- Section-Head -->
-                <div class="section-head full-width mb-50">
-                    <span class="icon icon-quote"></span><br>
-                    <h4 class="title">Testimonials</h4>
-                </div>
-
-                <div class="offset-md-1 col-md-10">
-                    <div class="owl-carousel owl-theme text-center">
-                        <div class="citem">
-                            <p>some paragraph.</p>
-                            <h5>Ranjana Banjara</h5><h6>Web Developer</h6>
-                        </div>
-                        <div class="citem">
-                            <p>some paragraph</p>
-                            <h5>Ranjana Banjara</h5><h6>Web Developer</h6>
-                        </div>
-                        <div class="citem">
-                            <p>some paragraph</p>
-                            <h5>Ranjana Banjara</h5><h6>Web Developer</h6>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonails ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Blog -->
-    <section class="blog section-padding" data-scroll-index="5">
-        <div class="container">
-            <div class="row">
-
-                <div class="section-head full-width">
-                    <h4 class="title">My Websites</h4>
-                </div>
-
-                <div class="owl-carousel owl-theme">
-                    <div class="pitem">
-                        <div class="post-img">
-                            <a href="#0">
-                                <img src="Images/blog1.jpg" alt="">
-                            </a>
-                            <a href="#0" class="tag">WordPress</a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#0">paragraph</a>
-                            </h3>
-                            <p>paragraph</p>
-                            <div class="info">
-                                <span class="more">
-                                    <a href="#0">Visit Website</a>
-                                </span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pitem">
-                        <div class="post-img">
-                            <a href="#0">
-                                <img src="Images/blog2.jpg" alt="">
-                            </a>
-                            <a href="#0" class="tag">Paragraph</a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#0">Paragraph</a>
-                            </h3>
-                            <p>paragraph</p>
-                            <div class="info">
-                                <span class="more">
-                                    <a href="#0">Visit Website</a>
-                                </span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pitem">
-                        <div class="post-img">
-                            <a href="#0">
-                                <img src="Images/blog3.jpg" alt="">
-                            </a>
-                            <a href="#0" class="tag">paragraph</a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#0">paragraph</a>
-                            </h3>
-                            <p>paragraph</p>
-                            <div class="info">
-                                <span class="more">
-                                    <a href="#0">Visit Website</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Blog ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Contact -->
-    <section class="contact section-padding bg-img" data-overlay-dark="8" data-background="img/b5.jpg" data-scroll-index="6">
+    <!-- End portfolio  -->
+    <!--  Start Contact -->
+    <section class="contact section-padding bg-img" data-overlay-dark="8" data-background="Images/resume.jpg" data-scroll-index="6">
         <div class="container">
             <div class="row">
 
@@ -667,25 +539,20 @@
             </div>
         </div>
     </section>
-    <!-- End Contact ====
-    ======================================= -->
-    <!-- =====================================
-    ==== Start Footer -->
+    <!-- End Contact  -->
+    <!--  Start Footer -->
     <footer class="footer">
         <p>Copyright &copy; And Made With Love All Rights Reserved.</p>
     </footer>
-    <!-- End Footer ====
-    ======================================= -->
-    <!-- The Modal -->
-
-
-    <div class="modal" id="myModal">
+    <!-- End Footer  -->
+    <!-- Modal 1 Row based Modal -->
+    <div class="modal" id="myModal1">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title" style="color:darkblue">Column Based Grid</h4>
+                    <h4 class="modal-title" style="color:darkblue">Bootstrap Exercise</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -759,19 +626,16 @@
                 <!-- Modal footer -->
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
 
 
             </div>
         </div>
     </div>
-
-
-    <!-- The Modal second Exercise  -->
-
-
-    <div class="modal" id="myModal1">
+    <!-- End of Modal 1-->
+    <!-- Modal 2 The column based Modal   -->
+    <div class="modal" id="myModal2">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
@@ -842,80 +706,395 @@
             </div>
         </div>
     </div>
-   <!--Javascript Exercises-->
-    <script>
+    <!--end of Moda 2-->
+    <!--Modal 3 Sum of numbers -->
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black">Math Challenge</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container clip">
+                        <div class="row">
+                            <div class="col text-center h3 " style="color:darkred"> Sum of Numbers Calculator!</div>
+                        </div>
+                        <hr style="border:2px solid black" />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="input1" placeholder="Enter first number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="input2" placeholder="Enter second number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="input3" placeholder="Enter third number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="input4" placeholder="Enter fourth number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="input5" placeholder="Enter fifth number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button class="btn  btn-danger" id="main-button">Hit!</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-warning" id="code">code</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col h3" style="color:darkgreen" id="results">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 
-    </script>
+
+
+                    </div>
+                    <div class="container-fluid" style="padding:40px">
+                        <div class="row">
+                            <div class="col-md-12" id="sumCode">
+
+                                <pre class="brush: js">
+                                        //Sum Challenge
+                                    //Toggle Show/Hide Button
+                                    $("#sumCode").hide();
+                                    $("#ShowCode").click(function () {
+                                        $("#sumCode").toggle();
+
+                                        if ($(this).text() == "Show code") {
+                                            $(this).text("Hide code");
+
+                                        }
+                                        else {
+                                            $(this).text("Show code")
+                                        };
+                                    });
+                                 //Sum of Numbers Exercise
+
+
+                                    $("#main-button").click(function () {
+                                        var num1 = Number($("#input1").val());
+                                        var num2 = Number($("#input2").val());
+                                        var num3 = Number($("#input3").val());
+                                        var num4 = Number($("#input4").val());
+                                        var num5 = Number($("#input5").val());
+                                        var sum = num1 + num2 + num3 + num4 + num5;
+                                        var output = `The sum of the five numbers you entered is :  ${sum}`;
+                                        $("#results").text(output);
+
+                                    });
+
+                                </pre>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
 
 
 
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--End of Modal 3 -->
+    <!--Modal 4 palindrone Challenge-->
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black">Reverse Challenge</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center h3 " style="color:midnightblue">
+                                EMORDNILAP!
+                                <hr style="border:2px dotted double" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" id="UI" placeholder="Enter anything" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" style="color:midnightblue">Is it a palindrome?</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 h3" style="color:darkgreen" id="result"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End of modal 4-->
+    <!--Modal 5 Factorial Challenge-->
+    <div class="modal" id="myModal5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black">Math Challenge</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+
+
+                        <div class="row">
+                            <div class="col-md-12 text-center h3 " style="color:darkred">
+                                Factorial Calculator!
+                                <hr style="border:2px solid black" />
+                            </div>
+                            <div class="row">
+                                <p style="padding:30px; color:darkred">Only the positive numbers have the factorials including a zero.</p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="text" id="userInput" placeholder="Enter any number" />
+                            </div>
+                            <div class="col-md-4 text-left h3" id="factorial" style="color:darkred">
+                                The result!
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-danger" id="calculate">Calculate</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-primary" id="showCode">Show Code</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container-fluid" style="padding:40px">
+                        <div class="row">
+                            <div class="col-md-12" id="factCode">
+
+                                <pre class="brush: js">
+                                         //Factorial Challenge
+                                            //Toggle Show/Hide Button
+                                            $("#factCode").hide();
+                                            $("#showCode").click(function () {
+                                                $("#factCode").toggle();
+
+                                                if ($(this).text() == "Show Code") {
+                                                    $(this).text("Hide Code");
+
+                                                }
+                                                else {
+                                                    $(this).text("Show Code")
+                                                };
+                                            });
+
+                                        $("#calculate").click(function () {
+
+                                        var num = Number($("#userInput").val());
+                                            if (num != 0) {
+                                                var result = 1;
+                                                for (let i = 2; i <= num; i++) {
+                                                var result = result * i;
+                                                }
+                                                    } else {
+                                                        result = 1;
+                                                    }
+                                                $("#factorial").text(result);
+                                         });
+                                     </pre>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--End of modal 5-->
+    <!--start Modal 6 FizzBuzz Challenge-->>
+    <div class="modal" id="myModal6">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:black">Math Challenge</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center h3 " style="color:darkred">
+                                FiZZ or BUZZ?
+                                <hr style="border:2px solid black" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" id="fizz" placeholder="Enter FIZZ number" />
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" id="buzz" placeholder="Enter BUZZ number" />
+                            </div>
+
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-warning" id="fizzBuzz">Hit Me!</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 h3" id="fizzBuzzOutput"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
+    </div>
 
 
 
     <!-- jQuery -->
-    <script src="Scripts/js/jquery-3.0.0.min.js"></script>
-    <script src="Scripts/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="Script/jquery-3.0.0.min.js"></script>
+    <script src="Script/jquery-migrate-3.0.0.min.js"></script>
 
     <!-- popper.min -->
-    <script src="Scripts/js/popper.min.js"></script>
+    <script src="Script/popper.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="Scripts/js/bootstrap.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
 
     <!-- scrollIt -->
-    <script src="Scripts/js/scrollIt.min.js"></script>
+    <script src="Script/scrollIt.min.js"></script>
 
     <!-- animated.headline -->
-    <script src="Scripts/js/animated.headline.js"></script>
+    <script src="Script/animated.headline.js"></script>
 
     <!-- jquery.waypoints.min -->
-    <script src="Scripts/js/jquery.waypoints.min.js"></script>
+    <script src="Script/jquery.waypoints.min.js"></script>
 
     <!-- jquery.counterup.min -->
-    <script src="Scripts/js/jquery.counterup.min.js"></script>
+    <script src="Script/jquery.counterup.min.js"></script>
 
     <!-- owl carousel -->
-    <script src="Scripts/js/owl.carousel.min.js"></script>
+    <script src="Script/owl.carousel.min.js"></script>
 
     <!-- jquery.magnific-popup js -->
-    <script src="Scripts/js/jquery.magnific-popup.min.js"></script>
+    <script src="Script/jquery.magnific-popup.min.js"></script>
 
     <!-- stellar js -->
-    <script src="Scripts/js/jquery.stellar.min.js"></script>
+    <script src="Script/jquery.stellar.min.js"></script>
 
     <!-- isotope.pkgd.min js -->
-    <script src="Scripts/js/isotope.pkgd.min.js"></script>
+    <script src="Script/isotope.pkgd.min.js"></script>
 
     <!-- validator js -->
-    <script src="Scripts/js/validator.js"></script>
+    <script src="Script/validator.js"></script>
 
     <!-- custom scripts -->
-    <script src="Scripts/js/scripts.js"></script>
+    <script src="Script/scripts.js"></script>
+
+
+    <!--Mycustom Scripts-->
+
+    <script type="text/javascript" src="Script/shCore.js"></script>
+    <script type="text/javascript" src="Script/shBrushJScript.js"></script>
+
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+    <script  src="Script/myCustom.js"></script>
+
+
+
+
+
 
 </body>
 </html>
