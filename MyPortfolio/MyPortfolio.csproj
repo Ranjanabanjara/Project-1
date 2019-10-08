@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\myCustom.css" />
     <Content Include="Content\shCore.css" />
+    <Content Include="Content\shCoreMidnight.css" />
     <Content Include="Content\ShThemeDefault.css" />
     <Content Include="Content\style.css" />
     <Content Include="Images\bg1.jpg" />
@@ -120,6 +122,7 @@
     <Content Include="Fonts\fa-brands-400.woff" />
     <Content Include="Fonts\fa-solid-900.woff2" />
     <Content Include="Fonts\fa-solid-900.woff" />
+    <Content Include="Fonts\et-line.woff" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\RanjanaPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

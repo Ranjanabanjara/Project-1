@@ -479,7 +479,7 @@ code, kbd, pre, samp {
 code {
     font-size: 87.5%;
     color: #e83e8c;
-    word-break: break-word
+    modifiedWord-break: break-modifiedWord
 }
 
 a > code {
@@ -509,7 +509,7 @@ pre {
     pre code {
         font-size: inherit;
         color: inherit;
-        word-break: normal
+        modifiedWord-break: normal
     }
 
 .pre-scrollable {
@@ -4388,7 +4388,7 @@ tbody.collapse.show {
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
-    word-wrap: break-word;
+    modifiedWord-wrap: break-modifiedWord;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
@@ -5543,12 +5543,12 @@ button.close {
     text-shadow: none;
     text-transform: none;
     letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
+    modifiedWord-break: normal;
+    modifiedWord-spacing: normal;
     white-space: normal;
     line-break: auto;
     font-size: .875rem;
-    word-wrap: break-word;
+    modifiedWord-wrap: break-modifiedWord;
     opacity: 0
 }
 
@@ -5656,12 +5656,12 @@ button.close {
     text-shadow: none;
     text-transform: none;
     letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
+    modifiedWord-break: normal;
+    modifiedWord-spacing: normal;
     white-space: normal;
     line-break: auto;
     font-size: .875rem;
-    word-wrap: break-word;
+    modifiedWord-wrap: break-modifiedWord;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);

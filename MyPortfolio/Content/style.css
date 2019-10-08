@@ -107,7 +107,7 @@ p {
   font-size: 15px;
   color: #a3a3a3;
   line-height: 1.6;
-  word-spacing: 1px;
+  modifiedWord-spacing: 1px;
   margin: 0;
 }
 
@@ -820,7 +820,7 @@ span, a, a:hover {
 }
 .testimonials .citem p {
   font-size: 18px;
-  word-spacing: 2px;
+  modifiedWord-spacing: 2px;
   margin-bottom: 15px;
 }
 .testimonials .citem h5 {

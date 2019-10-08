@@ -15,8 +15,8 @@
     <title>My Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="Images/favicon.ico"/>
- 
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" />
@@ -35,10 +35,12 @@
 
     <!--Core Style Css-->
     <link rel="stylesheet" href="Content/style.css" />
+    <link rel="stylesheet" href="Content/myCustom.css" />
 
     <!--SyntaxHilighter-->
     <link rel="stylesheet" href="Content/shCore.css" type="text/css" />
     <link rel="stylesheet" href="Content/ShThemeDefault.css" type="text/css" />
+    <link rel="stylesheet" href="Content/shCoreMidnight.css" type="text/css" />
 
 </head>
 
@@ -488,7 +490,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea id="form_message" name="message" placeholder="Your Message *" rows="4" required="required"></textarea>
+                                    <textarea id="form_message" name="generate" placeholder="Your generate *" rows="4" required="required"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -496,7 +498,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <span class="buton buton-lg">
-                                        <button type="submit" front="Send Message" back="&#xf35d;"></button>
+                                        <button type="submit" front="Send generate" back="&#xf35d;"></button>
                                     </span>
                                 </div>
                             </div>
@@ -707,9 +709,9 @@
         </div>
     </div>
     <!--end of Moda 2-->
-    <!--Modal 3 Sum of numbers -->
+    <!--Modal 3 Math Calculator -->
     <div class="modal" id="myModal3">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -720,96 +722,145 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="container clip">
+                    <div class="container">
                         <div class="row">
-                            <div class="col text-center h3 " style="color:darkred"> Sum of Numbers Calculator!</div>
+                            <div class="col text-center math "><p class="h3">Math Calculator!</p></div>
                         </div>
                         <hr style="border:2px solid black" />
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <input type="text" id="input1" placeholder="Enter first number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <input type="text" id="input2" placeholder="Enter second number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <input type="text" id="input3" placeholder="Enter third number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <input type="text" id="input4" placeholder="Enter fourth number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <input type="text" id="input5" placeholder="Enter fifth number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <button class="btn  btn-danger" id="main-button">Hit!</button>
+                                    <div class="col-md-3">
+                                        <button class="btn  btn-danger" id="main-button">Hit Me!</button>
                                     </div>
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn btn-warning" id="code">code</button>
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-warning" id="code">Show code</button>
                                     </div>
                                 </div>
 
 
                             </div>
+                            
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col h3" style="color:darkgreen" id="results">
-
+                                    <p class="math">Here goes your Calculations!</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="math" id="smallest"></p>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="math" id="largest"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="math" id="sum"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="math" id="product"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="math" id="average"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-outline-success" id="clear">Clear Results</button>
+                                    </div>
+                                </div>
+
                             </div>
+                            
                         </div>
 
-
-
-
-
                     </div>
-                    <div class="container-fluid" style="padding:40px">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12" id="sumCode">
 
                                 <pre class="brush: js">
-                                        //Sum Challenge
-                                    //Toggle Show/Hide Button
-                                    $("#sumCode").hide();
-                                    $("#ShowCode").click(function () {
-                                        $("#sumCode").toggle();
+    //Start Math Calculator!
+    //Toggle Show/Hide Button
+    $("#sumCode").hide();
+    $("#code").click(function () {
+        $("#sumCode").toggle();
 
-                                        if ($(this).text() == "Show code") {
-                                            $(this).text("Hide code");
+        if ($(this).text() == "Show code") {
+            $(this).text("Hide code");
 
-                                        }
-                                        else {
-                                            $(this).text("Show code")
-                                        };
-                                    });
-                                 //Sum of Numbers Exercise
+        }
+        else {
+            $(this).text("Show code")
+        };
+    });
+    //Calculator processing!
+    $("#main-button").click(function () {
+        var num1 = Number($("#input1").val());
+        var num2 = Number($("#input2").val());
+        var num3 = Number($("#input3").val());
+        var num4 = Number($("#input4").val());
+        var num5 = Number($("#input5").val());
+        
+       //calculations
+        var smallest = Math.min(num1, num2, num3, num4, num5);
+        var largest = Math.max(num1, num2, num3, num4, num5);
+        var sum = num1 + num2 + num3 + num4 + num5;
+        var product = num1 * num2 * num3 * num4 * num5;
+        var average = sum / 5;
 
+        //Output
+        $("#smallest").text("The smallest number is " + smallest);
+        $("#largest").text("The largest number is " + largest);
+        $("#sum").text("The sum is " + sum);
+        $("#product").text("The product is " + product);
+        $("#average").text("The average is " + average);
+        //Clear output 
+        $("#clear").click(function () {
 
-                                    $("#main-button").click(function () {
-                                        var num1 = Number($("#input1").val());
-                                        var num2 = Number($("#input2").val());
-                                        var num3 = Number($("#input3").val());
-                                        var num4 = Number($("#input4").val());
-                                        var num5 = Number($("#input5").val());
-                                        var sum = num1 + num2 + num3 + num4 + num5;
-                                        var output = `The sum of the five numbers you entered is :  ${sum}`;
-                                        $("#results").text(output);
+            $("#input1,#input2,#input3,#input4,#input5").val("");
 
-                                    });
+            $("#smallest").text("");
+            $("#largest").text("");
+            $("#sum").text("");
+            $("#product").text("");
+            $("#average").text("");
+
+        });
+
+    });
+//End of calculator!
 
                                 </pre>
 
@@ -849,32 +900,93 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center h3 " style="color:midnightblue">
-                                EMORDNILAP!
-                                <hr style="border:2px dotted double" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" id="UI" placeholder="Enter anything" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <button type="button" style="color:midnightblue">Is it a palindrome?</button>
-                                </div>
+                                Palindrome? || Not?
+                                <hr style="border:2px solid black" />
                             </div>
                         </div>
                         <div class="row">
+                            <p class="math" style="margin-left:20px; margin-bottom:10px">Palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nur!ses !run.</p>
+                        </div>
 
-                            <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class="row">
-                                    <div class="col-md-12 h3" style="color:darkgreen" id="result"></div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="palinInput" placeholder="Enter anything" style="width:100%" />
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-lg-12" style="color:darkgreen; padding-bottom:40px" id="palinOutput">Result Shows Here!</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-danger" style="color:midnightblue" id="check">Check if palindrome?</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-warning" id="palindromecode">Formula!</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-info" id="palinClear">Clear all!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="col-md-12" id="codepalindrome">
+
+                                <pre class="brush: js">
+//PalindromeChallenge
+//Toggle Show/Hide Button
+
+$("#codepalindrome").hide();
+$("#palindromecode").click(function () {
+    $("#codepalindrome").toggle();
+
+    if ($(this).text() == "Formula") {
+        $(this).text("Hide Code");
+
+    }
+    else {
+        $(this).text("Formula")
+    };
+});
+
+//palindrome check point!
+$("#check").click(function () {
+    let userInput = $("#palinInput").val();
+
+    var modified = userInput.toLowerCase().replace(/\s/g, '');
+
+    for (var index = userInput.length - 1, reverse = ""; index >= 0; index--) {
+        reverse += userInput.substr(index, 1);
+    }
+    displayrevword = reverse;
+    reverse = reverse.toLowerCase().replace(/\s/g, '');
+    var generate = "";
+    if (modified == reverse) {
+        generate =`${userInput} is a palindrome.`;
+    }
+    else {
+        generate = `${userInput} is a not palindrome.`;
+    }
+
+    $("#palinOutput").text(generate);
+   
+});
+//clear result!
+$("#palinClear").click(function () {
+    $("#palinInput").val("");
+    $("#palinOutput").text("");
+});      
+                                </pre>
+
+
                             </div>
 
                         </div>
+
 
                     </div>
 
@@ -909,27 +1021,29 @@
                                 Factorial Calculator!
                                 <hr style="border:2px solid black" />
                             </div>
-                            <div class="row">
-                                <p style="padding:30px; color:darkred">Only the positive numbers have the factorials including a zero.</p>
+                            <div class="row math">
+                                <p style="margin-left:30px; margin-bottom:10px;">Only the positive numbers greater than 170 have the factorials including a zero!</p>
 
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-4">
                                 <input type="text" id="userInput" placeholder="Enter any number" />
                             </div>
-                            <div class="col-md-4 text-left h3" id="factorial" style="color:darkred">
-                                The result!
-                            </div>
+                             <!--output-->>
+                            <div class="col-md-4" id="factorial" style="color:darkred"></div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-3">
+                        <div class="row " style="padding-top:5px">
+                            <div class="col-md-2">
                                 <button type="button" class="btn btn-danger" id="calculate">Calculate</button>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <button type="button" class="btn btn-primary" id="showCode">Show Code</button>
 
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-info" id="factclr">Clear all</button>
                             </div>
                         </div>
 
@@ -939,35 +1053,43 @@
                             <div class="col-md-12" id="factCode">
 
                                 <pre class="brush: js">
-                                         //Factorial Challenge
-                                            //Toggle Show/Hide Button
-                                            $("#factCode").hide();
-                                            $("#showCode").click(function () {
-                                                $("#factCode").toggle();
+                                    
+    //Factorial Challenge
+    //Toggle Show/Hide Button
+    $("#factCode").hide();
+    $("#showCode").click(function () {
+        $("#factCode").toggle();
 
-                                                if ($(this).text() == "Show Code") {
-                                                    $(this).text("Hide Code");
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
 
-                                                }
-                                                else {
-                                                    $(this).text("Show Code")
-                                                };
-                                            });
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+    //Factorial Calculation
+    $("#calculate").click(function () {
 
-                                        $("#calculate").click(function () {
-
-                                        var num = Number($("#userInput").val());
-                                            if (num != 0) {
-                                                var result = 1;
-                                                for (let i = 2; i <= num; i++) {
-                                                var result = result * i;
-                                                }
-                                                    } else {
-                                                        result = 1;
-                                                    }
-                                                $("#factorial").text(result);
-                                         });
-                                     </pre>
+        var num = Number($("#userInput").val());
+        if (num != 0) {
+            var result = 1;
+            for (let i = 2; i <= num; i++) {
+                var result = result * i;
+            }
+        } else {
+            result = 1;
+        }
+        $("#factorial").text(`The factorial of ${num} is :`+ result);
+    });
+    //clear results
+    $("#factclr").click(function () {
+        $("#userInput").val("");
+        $("#factorial").text("");
+    });
+});
+//End of factorial   
+                                </pre>
 
 
                             </div>
@@ -1008,25 +1130,89 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" id="fizz" placeholder="Enter FIZZ number" />
+                            <div class="col-md-3">
+                                <input type="text" id="fizz" placeholder="Enter a number" />
                             </div>
                             <div class="col-md-4">
-                                <input type="text" id="buzz" placeholder="Enter BUZZ number" />
+                                <input type="text" id="buzz" placeholder="Enter a number" />
                             </div>
 
-                            <div class="col-md-4">
-                                <button type="button" class="btn btn-warning" id="fizzBuzz">Hit Me!</button>
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-danger" id="fizzbuzz">Hit!</button>
                             </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-warning" id="fizzbuzzCode">Formula!</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-info" id="fbClear">Clear All!</button>
+                            </div>
+
                         </div>
 
                         <div class="row">
                             <div class="col-md-12 h3" id="fizzBuzzOutput"></div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12" id="fbCode">
+
+                                <pre class="brush: js">
+ //Fizzbuzz Challenge
+//Toggle Show/Hide Button
+    $("#fbCode").hide();
+    $("#fizzbuzzCode").click(function () {
+    $("#fbCode").toggle();
+
+    if ($(this).text() == "Formula") {
+        $(this).text("Hide Code");
+
+    }
+    else {
+        $(this).text("Formula")
+    };
+    });
+//Fizzbuzz
+$("#fizzbuzz").click(function () {
+   
+    var fizzNum = Number($("#fizz").val());
+    var buzzNum = Number($("#buzz").val());
+    var finalResult = "";
+
+for (var i = 1; i <= 100; i++) {
+    var comma = ", ";
+    if (i == 100) {
+        comma = " ";
+    }
+    if (i % fizzNum == 0 && i % buzzNum == 0) {
+        finalResult += "<span class='fizzbuzz'>fizzbuzz" + comma + "</span>";
+    }
+
+    else if (i % fizzNum == 0) {
+        finalResult += "<span class='fizz'>fizz" + comma + "</span>";
+
+    }
+    else if (i % buzzNum == 0) {
+        finalResult += "<span class='buzz'>buzz" + comma + "</span>";
+
+    }
+
+    else {
+        finalResult += i + comma;
+         }
+}
+    $("#fizzBuzzOutput").html(finalResult);
+});
+    $("#fbClear").click(function () {
+        $("#fizz").val("");
+        $("#buzz").val("");
+        $("#fizzBuzzOutput").html("");
+    });
+    //End of FizzBuzz     
+
+                                 </pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
                 <!-- Modal footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -1086,6 +1272,7 @@
     <script type="text/javascript" src="Script/shCore.js"></script>
     <script type="text/javascript" src="Script/shBrushJScript.js"></script>
 
+    
     <script type="text/javascript">
         SyntaxHighlighter.all();
     </script>
