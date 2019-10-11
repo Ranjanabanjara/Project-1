@@ -72,8 +72,7 @@
     <Content Include="Content\shCoreMidnight.css" />
     <Content Include="Content\ShThemeDefault.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Images\bg1.jpg" />
-    <Content Include="Images\bg3.jpg" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\hero.jpg" />
     <Content Include="Images\p1.jpg" />
