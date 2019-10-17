@@ -147,12 +147,12 @@ $("#codepalindrome").hide();
 $("#palindromecode").click(function () {
     $("#codepalindrome").toggle();
 
-    if ($(this).text() == "Formula") {
-        $(this).text("Hide Code");
+    if ($(this).text() == "ShowCode") {
+        $(this).text("HideCode");
 
     }
     else {
-        $(this).text("Formula")
+        $(this).text("ShowCode")
     };
 });
 
