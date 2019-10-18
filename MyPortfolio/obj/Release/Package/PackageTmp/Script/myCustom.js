@@ -92,12 +92,12 @@ $(document).ready(function () {
     $("#fizzbuzzCode").click(function () {
     $("#fbCode").toggle();
 
-    if ($(this).text() == "Formula") {
-        $(this).text("Hide Code");
+    if ($(this).text() == "ShowCode") {
+        $(this).text("HideCode");
 
     }
     else {
-        $(this).text("Formula")
+        $(this).text("ShowCode")
     };
     });
 //Fizzbuzz
@@ -147,12 +147,12 @@ $("#codepalindrome").hide();
 $("#palindromecode").click(function () {
     $("#codepalindrome").toggle();
 
-    if ($(this).text() == "ShowCode") {
-        $(this).text("HideCode");
+    if ($(this).text() == "showCode") {
+        $(this).text("hideCode");
 
     }
     else {
-        $(this).text("ShowCode")
+        $(this).text("showCode")
     };
 });
 

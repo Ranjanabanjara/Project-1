@@ -1,12 +1,12 @@
 ﻿
 .fizz{
-    font-weight:200;
-    color:blue
+    font-weight:bolder;
+    color:darkolivegreen
     }
 
 .buzz {
-    font-weight: 200;
-    color: mediumpurple;
+    font-weight: bolder;
+    color: mediumvioletred;
 }
 
 .fizzbuzz {
