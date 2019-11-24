@@ -72,9 +72,11 @@
     <Content Include="Content\shCoreMidnight.css" />
     <Content Include="Content\ShThemeDefault.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Images\back.jpeg" />
     <Content Include="Images\background.jpg" />
+    <Content Include="Images\background1.jpg" />
     <Content Include="Images\blog.png" />
-    <Content Include="Images\bug.jpeg" />
+    <Content Include="Images\port5.jpg" />
     <Content Include="Images\contact.jpg" />
     <Content Include="Images\cs.png" />
     <Content Include="Images\css.png" />
@@ -83,15 +85,15 @@
     <Content Include="Images\html.png" />
     <Content Include="Images\jquery.jpg" />
     <Content Include="Images\js.png" />
-    <Content Include="Images\mobile.jpg" />
     <Content Include="Images\newhero.jpg" />
+    <Content Include="Images\port4.jpg" />
     <Content Include="Images\port1.jpg" />
     <Content Include="Images\port2.jpg" />
     <Content Include="Images\port3.jpeg" />
-    <Content Include="Images\port4.jpg" />
-    <Content Include="Images\port5.jpeg" />
     <Content Include="Images\port6.jpg" />
     <Content Include="Images\resume.jpg" />
+    <Content Include="Images\testing.png" />
+    <Content Include="Images\ticket.png" />
     <Content Include="Images\xamarin.png" />
     <Content Include="index.html" />
     <Content Include="nuget.exe" />
@@ -127,12 +129,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="myResume.pdf" />
     <Content Include="Fonts\fa-brands-400.woff2" />
     <Content Include="Fonts\fa-brands-400.woff" />
     <Content Include="Fonts\fa-solid-900.woff2" />
     <Content Include="Fonts\fa-solid-900.woff" />
     <Content Include="Fonts\et-line.woff" />
+    <Content Include="Files\Ranjana Banjara  Resume.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\RanjanaPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

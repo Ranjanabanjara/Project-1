@@ -1,7 +1,8 @@
-﻿// JavaScript source code
+﻿//MyCustom JS
 $(document).ready(function () {
 
     //Start Math Calculator!
+
     //Toggle Show/Hide Button
     $("#sumCode").hide();
     $("#code").click(function () {
@@ -51,6 +52,7 @@ $(document).ready(function () {
     //End of Calculator!
 
     //Factorial Challenge
+
     //Toggle Show/Hide Button
     $("#factCode").hide();
     $("#showCode").click(function () {
@@ -74,20 +76,21 @@ $(document).ready(function () {
                 var result = result * i;
             }
         } else {
-            result = 1;
+           result = 1;
         }
-        $("#factorial").text(`The factorial of ${num} is :` + result);
+        $("#factorial").text(`The factorial of ${num} is: ` + result);
          //clear results
         $("#factclr").click(function () {
             $("#userInput").val("");
             $("#factorial").text("");
         });
     });
-//End of factorial
+    //End of factorial
 
 
-//Fizzbuzz Challenge
-//Toggle Show/Hide Button
+    //Fizzbuzz Challenge
+
+    //Toggle Show/Hide Button
     $("#fbCode").hide();
     $("#fizzbuzzCode").click(function () {
     $("#fbCode").toggle();
@@ -100,37 +103,45 @@ $(document).ready(function () {
         $(this).text("ShowCode")
     };
     });
-//Fizzbuzz
-$("#fizzbuzz").click(function () {
+    //Fizzbuzz
+    $("#fizzbuzz").click(function () {
    
-    var fizzNum = Number($("#fizz").val());
-    var buzzNum = Number($("#buzz").val());
-    var finalResult = "";
+        var fizzNum = Number($("#fizz").val());
+        var buzzNum = Number($("#buzz").val());
+        var finalResult = "";
+        if (fizzNum == 0 && buzzNum == 0)
+        {
+            finalResult += "Please enter number between 1 and 100 to reveal FizzBuzz.";
+        } else {
+            for (var i = 1; i <= 100; i++) {
+                var comma = ", ";
+                if (i == 100)
+                {
+                    comma = " ";
+                }
 
-for (var i = 1; i <= 100; i++) {
-    var comma = ", ";
-    if (i == 100) {
-        comma = " ";
-    }
-    if (i % fizzNum == 0 && i % buzzNum == 0) {
-        finalResult += "<span class='fizzbuzz'>fizzbuzz" + comma + "</span>";
-    }
+                if (i % fizzNum == 0 && i % buzzNum == 0) {
+                    finalResult += "<span class='fizzbuzz'>fizzbuzz" + comma + "</span > ";
+                }
 
-    else if (i % fizzNum == 0) {
-        finalResult += "<span class='fizz'>fizz" + comma + "</span>";
+                else if (i % fizzNum == 0) {
+                    finalResult += "<span class='fizz'>fizz" + comma + "</span>";
 
-    }
-    else if (i % buzzNum == 0) {
-        finalResult += "<span class='buzz'>buzz" + comma + "</span>";
+                }
+                else if (i % buzzNum == 0) {
+                    finalResult += "<span class='buzz'>buzz" + comma + "</span>";
 
-    }
+                }
 
-    else {
-        finalResult += i + comma;
-         }
-}
-    $("#fizzBuzzOutput").html(finalResult);
-});
+                else {
+
+                    finalResult += i + comma;
+                     }
+            }
+        }
+        $("#fizzBuzzOutput").html(finalResult);
+
+    });
     $("#fbClear").click(function () {
         $("#fizz").val("");
         $("#buzz").val("");
@@ -138,61 +149,56 @@ for (var i = 1; i <= 100; i++) {
     });
     //End of FizzBuzz
    
+    //PalindromeChallenge
+    //Toggle Show/Hide Button
 
+    $("#codepalindrome").hide();
+    $("#palindromecode").click(function () {
+        $("#codepalindrome").toggle();
 
-//PalindromeChallenge
-//Toggle Show/Hide Button
+        if ($(this).text() == "showCode") {
+            $(this).text("hideCode");
 
-$("#codepalindrome").hide();
-$("#palindromecode").click(function () {
-    $("#codepalindrome").toggle();
-
-    if ($(this).text() == "showCode") {
-        $(this).text("hideCode");
-
-    }
-    else {
-        $(this).text("showCode")
-    };
-});
-
-//palindrome check point!
-$("#check").click(function () {
-    let userInput = $("#palinInput").val();
-
-    var modified = userInput.toLowerCase().replace(/\s/g, '');
-
-    for (var index = userInput.length - 1, reverse = ""; index >= 0; index--) {
-        reverse += userInput.substr(index, 1);
-    }
-    displayrevword = reverse;
-    reverse = reverse.toLowerCase().replace(/\s/g, '');
-    var generate = "";
-    if (modified == reverse) {
-        generate =`${userInput} is a palindrome.`;
-    }
-    else {
-        generate = `${userInput} is a not palindrome.`;
-    }
-
-    $("#palinOutput").text(generate);
-    //clear result!
-    $("#palinClear").click(function () {
-        $("#palinInput").val("");
-        $("#palinOutput").text("");
+        }
+        else {
+            $(this).text("showCode")
+        };
     });
+
+    //palindrome check point!
+    $("#check").click(function () {
+        let userInput = $("#palinInput").val();
+
+        var modified = userInput.toLowerCase().replace(/\s/g, '');
+
+        for (var index = userInput.length - 1, reverse = ""; index >= 0; index--) {
+            reverse += userInput.substr(index, 1);
+        }
+        displayrevword = reverse;
+        reverse = reverse.toLowerCase().replace(/\s/g, '');
+        var generate = "";
+        if (modified == "")
+        {
+            generate = `Please Enter to try.`;
+        }
+        else if(modified == reverse)
+        {
+            generate = `${userInput} is a palindrome.`;
+        }
    
-});
+        else
+        {
+            generate = `${userInput} is not a palindrome.`;
 
+             }
 
-
-
-
-
-
-
-
-
-
+        $("#palinOutput").text(generate);
+        //clear result!
+        $("#palinClear").click(function () {
+            $("#palinInput").val("");
+            $("#palinOutput").text("");
+        });
+   
+    });
 
 });

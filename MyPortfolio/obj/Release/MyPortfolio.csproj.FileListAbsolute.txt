@@ -50,7 +50,6 @@ C:\Users\Ranju\Desktop\Project 1\MyPortfolio\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\obj\Release\MyPortfolio.csprojAssemblyReference.cache
-C:\Users\Ranju\Desktop\Project 1\MyPortfolio\obj\Release\MyPortfolio.csproj.CoreCompileInputs.cache
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\obj\Release\MyPortfolio.csproj.CopyComplete
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\obj\Release\MyPortfolio.dll
 C:\Users\Ranju\Desktop\Project 1\MyPortfolio\obj\Release\MyPortfolio.pdb
