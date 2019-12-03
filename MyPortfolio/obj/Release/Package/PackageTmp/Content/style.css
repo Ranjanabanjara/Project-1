@@ -408,7 +408,7 @@ span, a, a:hover {
   color: #fff;
 }
 .navbar .navbar-nav .nav-link {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: #eee;
   letter-spacing: .5px;
@@ -972,7 +972,7 @@ span, a, a:hover {
   }
 
   .navbar .navbar-collapse {
-    max-height: 320px;
+    max-height: 400px;
     overflow: visible;
     background: #111;
     text-align: center;
