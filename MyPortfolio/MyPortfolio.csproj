@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\js.jpg" />
+    <Content Include="Images\csharp.png" />
+    <Content Include="Images\jqueryimagenew.jpg" />
     <Content Include="Content\myCustom.css" />
     <Content Include="Content\shCore.css" />
     <Content Include="Content\shCoreMidnight.css" />
@@ -77,6 +78,7 @@
     <Content Include="Images\background.jpg" />
     <Content Include="Images\background1.jpg" />
     <Content Include="Images\blog.png" />
+    <Content Include="Images\js.png" />
     <Content Include="Images\port5.jpg" />
     <Content Include="Images\contact.jpg" />
     <Content Include="Images\cs.png" />
@@ -94,7 +96,7 @@
     <Content Include="Images\resume.jpg" />
     <Content Include="Images\testing.png" />
     <Content Include="Images\ticket.png" />
-    <Content Include="Images\xamarin.jpg" />
+    <Content Include="Images\sql.jpg" />
     <Content Include="index.html" />
     <Content Include="nuget.exe" />
     <Content Include="plugins\css\animate.min.css" />

@@ -23,7 +23,15 @@ $(document).ready(function () {
         var num3 = Number($("#input3").val());
         var num4 = Number($("#input4").val());
         var num5 = Number($("#input5").val());
+        //Conditions
+        if (num1 == 0 && num2 == 0 && num3 == 0 && num4 == 0 && num5 == 0) {
+            $("#product").text("Please fill each box with non zero numbers!");
 
+        } else if (num1 == 0 || num2 == 0 || num3 == 0 || num4 == 0 || num5 == 0)
+        {
+            $("#product").text("Please fill each box with non zero numbers!");
+        }
+        else {
         //calculations
         var smallest = Math.min(num1, num2, num3, num4, num5);
         var largest = Math.max(num1, num2, num3, num4, num5);
@@ -36,7 +44,9 @@ $(document).ready(function () {
         $("#largest").text("The largest number is " + largest);
         $("#sum").text("The sum is " + sum);
         $("#product").text("The product is " + product);
-        $("#average").text("The average is " + average);
+            $("#average").text("The average is " + average);
+
+                }
         //Clear output 
         $("#clear").click(function () {
             $("#input1,#input2,#input3,#input4,#input5").val("");
@@ -66,26 +76,42 @@ $(document).ready(function () {
             $(this).text("Show Code")
         };
     });
-    //Factorial Calculation
+
+
+    ////Factorial Calculation
     $("#calculate").click(function () {
 
-        var num = Number($("#userInput").val());
-        if (num != 0) {
+        var num = parseInt($("#userInput").val());
+      
+
+        if (num >= 0) {
             var result = 1;
             for (let i = 2; i <= num; i++) {
                 var result = result * i;
             }
-        } else {
-           result = 1;
+            
+        }  else if (num === NaN) {
+            result = undefined;
+            
         }
-        $("#factorial").text(`The factorial of ${num} is: ` + result);
-         //clear results
+        if (result == undefined) {
+
+            $("#factorial").text(`The factorial of ${num} is: ` + result + ', please enter any positive number.');
+        } else
+        {
+
+            $("#factorial").text(`The factorial of ${num} is: ` + result);
+        }
+
+        //clear results
         $("#factclr").click(function () {
             $("#userInput").val("");
             $("#factorial").text("");
         });
     });
-    //End of factorial
+    ////End of factorial
+
+
 
 
     //Fizzbuzz Challenge
@@ -170,11 +196,11 @@ $(document).ready(function () {
         let userInput = $("#palinInput").val();
 
         var modified = userInput.toLowerCase().replace(/\s/g, '');
-
+       
         for (var index = userInput.length - 1, reverse = ""; index >= 0; index--) {
             reverse += userInput.substr(index, 1);
         }
-        displayrevword = reverse;
+        
         reverse = reverse.toLowerCase().replace(/\s/g, '');
         var generate = "";
         if (modified == "")
